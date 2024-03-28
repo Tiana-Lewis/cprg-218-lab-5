@@ -30,6 +30,33 @@
     align-items: center;
 }
 
+/*WEATHER CARDS*/
+
+.w-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.w-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.w-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.w-card img {
+    max-width: 100px;
+    margin: 10px auto;
+}
+
 /*CARDS*/
 .card-container {
     display: flex;

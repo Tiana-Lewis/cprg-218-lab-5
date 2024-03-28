@@ -91,15 +91,18 @@
 <!-- WEATHER API -->
 
 <section class="dropd">
-  
+
 <div class="d-container">
   <select id="dropdown" class="dropdown">
-      <option value="http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=Calgary">Calgary</option>
-      <option value="http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=Edmonton">Edmonton</option>
-      <option value="http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=Toronto">Toronto</option>
-      <option value="http://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=New York">New York</option>
+      <option value="http://api.weatherstack.com/current?access_key=d562f951fce799bb48b914e40c3cdbcf&query=Calgary">Calgary</option>
+      <option value="http://api.weatherstack.com/current?access_key=d562f951fce799bb48b914e40c3cdbcf&query=Edmonton">Edmonton</option>
+      <option value="http://api.weatherstack.com/current?access_key=d562f951fce799bb48b914e40c3cdbcf&query=Toronto">Toronto</option>
+      <option value="http://api.weatherstack.com/current?access_key=d562f951fce799bb48b914e40c3cdbcf&query=New York">New York</option>
   </select>
 </div>
+
+<div id="weather-cards" class="d-container"></div>
+
 </section>
 
 <!--CONTENT-->
@@ -221,5 +224,6 @@ for (var i = 0; i < acc.length; i++) {
   <p>&copy; <script>document.write(new Date().getFullYear())</script> Tiana Lewis Design, All Rights Reserved.</p>
 </div>
 </section>
+<script src="api.js" defer></script>
 </body>
 </html>
