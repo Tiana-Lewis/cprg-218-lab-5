@@ -4,19 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dropdown.addEventListener('change', function() {
         const selectedOption = dropdown.options[dropdown.selectedIndex];
-        const apiUrl = selectedOption.value;
+        const location = selectedOption.textContent;
+        const accessKey = 'd562f951fce799bb48b914e40c3cdbcf';
+        const apiUrl = `http://api.weatherstack.com/current?access_key=${accessKey}&query=${location}`;
 
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                renderWeatherCard(data.current);
+                renderWeatherCard(data.current, weatherCardsContainer);
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
             });
     });
 
-    function renderWeatherCard(currentWeather) {
+    function renderWeatherCard(currentWeather, container) {
         const cardHTML = `
             <div class="w-card">
                 <h3>${currentWeather.observation_time}</h3>
@@ -26,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>Humidity: ${currentWeather.humidity}%</p>
             </div>
         `;
-        weatherCardsContainer.innerHTML = cardHTML;
+        container.innerHTML = cardHTML;
     }
 });
