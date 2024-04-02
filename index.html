@@ -8,11 +8,6 @@
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/responsiveness.css">
- 
-  <!--
-  I read your note about commits and had already completed the 
-  assignment but I will make note and do better in the future.
-  -->
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,93 +31,21 @@
       <h2>Make your special day memorable for life!</h2>
     </div>
     </section>
-<!--CARDS-->
-
-  <section class="c-container" id="services">
-
-    <h2 class="banner-h2">Most Popular Services</h2>
-
-    <ul class="card-container">
-      <li class="card">
-        <img class="c-img" src="assets/couple_ring_opt.jpg" alt="A gay couple admiring their wedding rings">
-        <div class="card-content">
-          <h3 class="subheader">
-            Full-Service
-          </h3>
-          <h4 class="header">
-            Couples Photos
-          </h4>
-          <p class="paragraph">
-            Our team knows just the right angles to make you and your partner shine!
-          </p>
-        </div>
-      </li>
-      <li class="card">
-        <img class="c-img" src="assets/wedding_table_opt.jpg" alt="a wedding table with cutlery, napkins and flower arrangments">
-        <div class="card-content">
-          <h3 class="subheader">
-            Full-Service
-          </h3>
-          <h4 class="header">
-            Decor
-          </h4>
-          <p class="paragraph">
-            Bring your inspiration to life! Our team helps you create a full decor package.
-          </p>
-        </div>
-      </li>
-      <li class="card">
-        <img class="c-img" src="assets/wedding_balloons_opt.jpg" alt="a couple releasing balloons at their wedding with friends and family">
-        <div class="card-content">
-          <h3 class="subheader">
-            Full-Service
-          </h3>
-          <h4 class="header">
-            Themed Weddings
-          </h4>
-          <p class="paragraph">
-            Have a particular theme in mind? Our team will bring your vision to life.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </section>  
 
 <!-- WEATHER API -->
 
-<section class="c-container" id="weather">
-
-  <h2 class="banner-h2">Check the Weather</h2>
-
-  <div class="d-container">
-    <select id="dropdown" class="dropdown">
-        <option value="http://api.weatherstack.com/current?access_key=3d4792ea8fd9e88098fd04f01fadc422&query=Calgary">Calgary</option>
-        <option value="http://api.weatherstack.com/current?access_key=3d4792ea8fd9e88098fd04f01fadc422&query=Edmonton">Edmonton</option>
-        <option value="http://api.weatherstack.com/current?access_key=3d4792ea8fd9e88098fd04f01fadc422&query=Toronto">Toronto</option>
-        <option value="http://api.weatherstack.com/current?access_key=3d4792ea8fd9e88098fd04f01fadc422&query=New York">New York</option>
-    </select>
+<section class="container">
+  <h2>Select a Location</h2>
+  <div class="dropdown-container">
+      <select id="location-dropdown">
+          <option value="Calgary">Calgary</option>
+          <option value="Edmonton">Edmonton</option>
+          <option value="Toronto">Toronto</option>
+          <option value="New York">New York</option>
+      </select>
   </div>
-
-  <div id="weather-cards" class="card-container"></div>
-
+  <div id="weather-card" class="card"></div>
 </section>
-
-<!--CONTENT-->
-
-<section class="container content-container" id="content">
-  
-    <div class="content">
-      <img class="content-image" src="assets/couple_castle_opt.jpg" alt="A couple leaning on the balcony of a rustic castle village">
-    </div>
-    <div class="content">
-    <div class="content-text">
-      <h2>From flowers to catering,</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perferendis, consequuntur accusamus, dolorum veritatis facilis nostrum architecto quis veniam odio illum rem blanditiis chumque asperiores voluptas eum necessitatibus dignissimos hic aliquid! In deleniti deserunt temporibus, debitis facere quod expedita harum quisquam neque autem non sed. Maiores reprehenderit quos quas voluptatum.</p>  
-      <button class="content-btn">Learn more!</button>
-    </div>
-    </div>
-    
-  </section>
 
 <!--VIDEO-->
   <section class="container vid">
@@ -226,6 +149,6 @@ for (var i = 0; i < acc.length; i++) {
   <p>&copy; <script>document.write(new Date().getFullYear())</script> Tiana Lewis Design, All Rights Reserved.</p>
 </div>
 </section>
-<script src="api.js" defer></script>
+<script src="api.js"></script>
 </body>
 </html>

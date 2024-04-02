@@ -45,71 +45,25 @@ select {
     align-items: center;
 }
 
-/* WEATHER CARDS */
+/*Weather cards and container*/
 
-.w-card {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+.container {
     text-align: center;
+    padding: 20px;
 }
 
-.w-card h3 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #807830;
+.dropdown-container {
+    margin-bottom: 20px;
 }
 
-.w-card p {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #807830;
-}
-
-.w-card img {
-    max-width: 100px;
-    margin: 10px auto;
-}
-
-/*CARDS*/
-.card-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    row-gap: 15px;
-    column-gap: 15px;
-    width: 100%;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-}
 .card {
-    background-color: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-    width: 24rem;
-  }
-  
-  .c-img {
-    border-bottom: 0.25rem solid #BF6900;
-    border-radius: 0.25rem 0.25rem 0 0;
-    height: auto;
-    width: 100%;
-  }
-
-  .card-content {
-    padding: 1rem;
-  }
-  
-  .header,
-  .subheader {
-    margin: 0;
-  }
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /*OTHER CONTENT*/
 * {
