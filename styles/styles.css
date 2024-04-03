@@ -45,26 +45,46 @@ select {
     align-items: center;
 }
 
-/*Weather cards and container*/
+/*news cards and container*/
 
 .container {
-    text-align: center;
-    padding: 20px;
-}
-
-.dropdown-container {
     margin-bottom: 20px;
-}
-
-.card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  }
+  
+  #newsContainer {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  }
+  
+  .card h2 {
+    text-align: center;
+  }
+  
+  .card p {
+    text-align: center;
+    font-family: "Lato", serif, Arial;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+  .card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 /*OTHER CONTENT*/
 * {
     margin: 0;

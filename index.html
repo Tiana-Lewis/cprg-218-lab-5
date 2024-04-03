@@ -32,19 +32,19 @@
     </div>
     </section>
 
-<!-- WEATHER API -->
+<!-- News API -->
 
 <section class="container">
-  <h2>Select a Location</h2>
-  <div class="dropdown-container">
-      <select id="location-dropdown">
-          <option value="Calgary">Calgary</option>
-          <option value="Edmonton">Edmonton</option>
-          <option value="Toronto">Toronto</option>
-          <option value="New York">New York</option>
-      </select>
+  <div class="container">
+    <select id="countrySelect">
+      <option value="us">United States</option>
+      <option value="gb">United Kingdom</option>
+      <option value="ca">Canada</option>
+      <!-- Add more options as needed -->
+    </select>
+    <button id="getNewsBtn">Get News</button>
   </div>
-  <div id="weather-card" class="card"></div>
+  <div id="newsContainer"></div>
 </section>
 
 <!--VIDEO-->
