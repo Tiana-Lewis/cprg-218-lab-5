@@ -1,4 +1,12 @@
 /*news cards and container*/
+
+.news-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
 .banner {
     color: #ffffff;
     background-color: #848A98;
