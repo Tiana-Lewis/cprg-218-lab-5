@@ -1,128 +1,73 @@
-/*news cards and container*/
+/*news cards and button*/
 
-.news-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.banner {
-    color: #ffffff;
-    background-color: #848A98;
-    padding: 0.1rem 2.5rem;
+header {
     text-align: center;
-    margin: 50px auto;
-    max-width: 600px;
-}
-#countrySelect {
-    margin-right: 10px;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    font-family: "Lato", serif, Arial;
-}
+    margin-top: 6rem;
+  }
+  
+  #generate-btn {
+    display: inline-block;
+    margin-top: 20px;
+  }
 
-#countrySelect option {
-    text-align: center;
-    font-family: "Lato", serif, Arial;
-}
-
-#getNewsBtn {
-    background-color: #0B1953;
-    color: #FFF7E0;
+#generate-btn {
+    background-color: #007bff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.4s;
-    margin-left: 10px;
-}
-
-#getNewsBtn:hover {
-    background-color: #303c80;
-}
-
-.container {
+  }
+  
+  #generate-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-#newsContainer {
-    margin-top: 20px;
-}
-  
-.card {
-    background-color: #FFF7E0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
-    margin-bottom: 20px;
+    justify-content: center;
     padding: 20px;
-    width: calc(30% - 20px);
-    display: inline-block;  
-    border: 1px solid #000000;
-    background-color: #fffef2;
-    text-align: center;
-}
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    border: 2px solid #007bff;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
   
   .card h2 {
-    text-align: center;
-    font-family: "Karla", sans-serif, Arial;
-    font-weight: 700;
-    font-style: normal;
-    padding-left: 2rem;
-    margin-right: 2rem;
+    margin-top: 0;
   }
+
+  .banner {
+  background-color: #11253a;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto 10px;;
+  text-align: center; 
+  border-radius: 8px; 
+  border: none;
+}
   
-  .card p {
-    text-align: center;
-    font-family: "Lato", serif, Arial;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .card a {
-    color: #0004FF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card a:hover {
-    text-decoration: underline;
-    color: #0004FF;
-}
-
-  .card img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  .card-button {
-    margin-top: auto;
-    text-align: center;
-  }
-
-/*OTHER CONTENT*/
-* {
+  .banner h1 {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-  ::selection {
-    color: #0004FF;
-    background: rgb(255, 255, 255);
   }
-
 /*FONTS*/
 h1 {
     font-family: "Archivo Black", sans-serif, Helvetica;
