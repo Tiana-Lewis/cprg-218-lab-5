@@ -11,11 +11,10 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mea+Culpa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 <!-- Icons FontAwesome -->
-<script src="https://kit.fontawesome.com/7b54f30bf8.js" crossorigin="anonymous"></script>
   
   <title>Lab 5</title>
 </head>
@@ -24,123 +23,60 @@
  <section class="hero-container">
     
     <div class="hero-image">
-      <img src="assets/couple_sky_opti.jpg" alt="behind view of a couple walking into a field, a large sky blue sky above them">
+      <img src="assets/earth_lights.jpg" alt="behind view of a couple walking into a field, a large sky blue sky above them">
     </div>
     <div class="hero-text">
-        <h1>Infinitee Wedding Planning</h1>
-      <h2>Make your special day memorable for life!</h2>
+        <h1>World News</h1>
+      <h2>News from around the world! (more locations coming soon)</h2>
     </div>
     </section>
+
+<!--banner-->
+  <section id="banner">
+  <div class="banner">
+<h2 class="banner">
+  Realtime News Updates
+</h2>    
+</div>
+</section>
+
 
 <!-- News API -->
 
 <section class="container">
+
   <div class="container">
     <select id="countrySelect">
       <option value="us">United States</option>
       <option value="gb">United Kingdom</option>
       <option value="ca">Canada</option>
-      <!-- Add more options as needed -->
     </select>
     <button id="getNewsBtn">Get News</button>
   </div>
   <div id="newsContainer"></div>
+
 </section>
-
-<!--VIDEO-->
-  <section class="container vid">
-
-  <h2 class="banner-h2">Top 5 Wedding Decor Ideas for 2023</h2>  
-
-<div class="vid-container">
-
-  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/C_qGepkW3KI?si=Ow-Z-GKnH9MBH-V2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </section>
-
-
-  <!-- ACCORDIAN -->
-  <section class="container accordion-container" id="faq">
-    <h2 class="banner-h2">FAQ's</h2>
-  
-    <div class="accordion-wrapper">
-      <button class="accordion-button">
-        How much will my wedding package cost? 
-        <i class="fa-solid fa-angle-up icon-before"></i>
-        <i class="fa-solid fa-angle-down icon-after"></i>
-      </button>
-  
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
-      </div>
-      
-      <button class="accordion-button">
-        How long do I need to fully plan?
-        <i class="fa-solid fa-angle-up icon-before"></i>
-        <i class="fa-solid fa-angle-down icon-after"></i>
-      </button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
-      </div>
-      
-      <button class="accordion-button">
-        I need to make changes last minute, can I?
-        <i class="fa-solid fa-angle-up icon-before"></i>
-        <i class="fa-solid fa-angle-down icon-after"></i>
-      </button>
-    <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
-      </div>
-
-      <button class="accordion-button">
-        Do you do weddings for pets?
-        <i class="fa-solid fa-angle-up icon-before"></i>
-        <i class="fa-solid fa-angle-down icon-after"></i>
-      </button>
-    <div class="panel">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati doloremque chum illo deleniti vero, dignissimos autem inventore quibusdam porro omnis aspernatur numquam accusantium ea temporibus.</p>
-      </div>
-      
-      <script>
-  var acc = document.querySelectorAll(".accordion-button");
-
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-      </script>
-
-        </div>
-  </section>
 
   <!-- FOOTER -->
   <section class="footer-container">
       <div class="footer-item">
-              <h4>Our Mission</h4>
-              <p>We want to make your day special, and the process stress-free! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores iste corporis atque, eaque iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. In iure, facere quidem enim perferendis excepturi?</p>
+              <h4>Real-time News!</h4>
+              <p>Bring you the most recent stories, from select locations. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores iste corporis atque, eaque iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. In iure, facere quidem enim perferendis excepturi?</p>
             </div>
 
     <div class="footer-item">
       <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20068.584327775454!2d-114.0960815256836!3d51.042505999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537171f4358389df%3A0x7b1c052b9b84eaeb!2sVenue%20308!5e0!3m2!1sen!2sca!4v1710952847178!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20061.51727551255!2d-114.20868772568362!3d51.05881789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716e6748b6b7b1%3A0x666e4144cb1dbbb!2sCTV%20Calgary!5e0!3m2!1sen!2sca!4v1712110886170!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
          <div class="footer-item">
         <h4>Links</h4>
         <ul class="links">
-          <li><a href="#content" class="wht-link">About Us</a></li>
-          <li><a href="#" class="wht-link">Consultation</a></li>
-          <li><a href="#services" class="wht-link">Services</a></li>
-          <li><a href="#" class="wht-link">Our Staff</a></li>
-          <li><a href="#faq" class="wht-link">FAQ</a></li>
+          <li><a href="#" class="wht-link">About Us</a></li>
+          <li><a href="#" class="wht-link">Staff</a></li>
+          <li><a href="#" class="wht-link">Donate</a></li>
+          <li><a href="#" class="wht-link">FAQ</a></li>
           <li><a href="#" class="wht-link">Contact</a></li>
         </ul>
         </div>
